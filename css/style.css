@@ -225,3 +225,32 @@
  .modal-content {
    border-radius: 8px;
  }
+#brochureModal .modal-content {
+ background: linear-gradient(to bottom,
+       rgba(40, 83, 88, 0.6),
+       /* top color */
+       rgba(0, 23, 26, 0.8)
+       /* bottom color  */
+     );
+    color: #fff; /* make text visible on dark background */
+    border-radius: 15px; /* softer edges */
+    padding: 20px;
+    border: none;
+}
+
+/* Adjust form inputs for contrast */
+#brochureModal .form-control,
+#brochureModal .form-select {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    color: #000;
+}
+
+#brochureModal .form-label {
+    color: #fff;
+}
+
+#brochureModal .modal-header,
+#brochureModal .modal-footer {
+    border: none;
+}
