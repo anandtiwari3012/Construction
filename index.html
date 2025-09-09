@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Transparent Navbar + Hero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Transparent Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assests/logo.png" alt="" width="186" height="39"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Plans</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Gallery</a></li>
+                </ul>
+            </div>
+            <div style="margin-left: 250px; margin-right: 5%;">
+                <a href="tel:6394690062" class="text-decoration-none">
+                    <i class="bi bi-telephone-fill"></i>+91 6394690062
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-7 mb-4 mb-lg-0 text-white">
+                    <h1 class="display-5 fw-bold">COVETED HOMES,<br> WAIVER ADVANTAGE</h1>
+                    <p class="lead">*T&amp;C: 2% STAMP DUTY WAIVED</p>
+                </div>
+
+                <!-- Right Form -->
+                <div class="col-lg-4" style="align-items: center;">
+                    <div class="enquiry-form">
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                            <input type="hidden" name="access_key" value="640bb50d-922d-41d4-a293-2d2757e7e21f" />
+                            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                            <input type="checkbox" name="botcheck" style="display:none;" />
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email ID</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder=""
+                                    required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="mobile" class="form-label">Mobile</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">+91</span>
+                                    <input type="tel" name="phone" id="mobile" class="form-control" placeholder=""
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="flat" class="form-label">Flat Type</label>
+                                <select name="flat" id="flat" class="form-select" required>
+                                    <option value=""></option>
+                                    <option>2 BHK</option>
+                                    <option>3 BHK</option>
+                                    <option>4 BHK</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" name="consent" id="consent" class="form-check-input" required>
+                                <label class="form-check-label" for="consent">
+                                    By submitting this form, you consent to receive calls, messages, and communications.
+                                </label>
+                            </div>
+
+                            <div class="mb-3">
+                                <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            </div>
+
+                            <p class="text-center text-gray-500" id="result"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- icon sction -->
+    <section class="py-4 bg-light" style="background: linear-gradient(to bottom, #16565F, #f8fdfc);">
+        <div class="container">
+            <div class="row text-center text-md-start gy-4 justify-content-center">
+                <!-- Item 1 -->
+                <div class="col-12 col-md-3 d-flex align-items-center">
+                    <img src="./assests/icon/Possession.png" class="me-2 heighlight-icon" alt="Possession" width="40">
+                    <div>
+                        <small class="d-block text-muted">Possession</small>
+                        <p class="icon-text">Dec 2027 (Phase I)<br>Dec 2028 (Phase II)</p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-12 col-md-3 d-flex align-items-center">
+                    <img src="./assests/icon/No. of Towers & Elevation.png" class="me-2 heighlight-icon"
+                        alt="Possession" width="40">
+                    <div>
+                        <small class="d-block text-muted">No. of Towers &amp; Elevation</small>
+                        <p class="icon-text">6 | G+18, 20 &amp; 23<br>1 | G+7</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-12 col-md-2 d-flex align-items-center">
+                    <img src="./assests/icon/Project Area.png" class="me-2 heighlight-icon" alt="Possession" width="40">
+                    <div>
+                        <small class="d-block text-muted">Project Area</small>
+                        <p class="icon-text">11.5 Acres+</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-12 col-md-2 d-flex align-items-center">
+                    <img src="./assests/icon/Configuration.png" class="me-2 heighlight-icon" alt="Possession"
+                        width="40">
+                    <div>
+                        <small class="d-block text-muted">Configuration</small>
+                        <p class="icon-text">2/3/4 BHK</p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-12 col-md-2  d-flex align-items-center">
+                    <img src="./assests/icon/BU Area.png" class="me-2 heighlight-icon" alt="Possession" width="40">
+                    <div>
+                        <small class="d-block text-muted">BU Area</small>
+                        <p class="icon-text">625 – 1488 sq ft</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview-section" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Column -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h4 class="title-heading">Overview</h4>
+                    <hr class="Left" style="width: 20px; height: 3px; background-color:#16565F; opacity:1;">
+                    <h1 class="overview">Your Home is your Vacation</h1>
+                    <p>
+                        Luxury comes in all forms and one of them is the quiet and calm neighbourhood that this property
+                        near Tollygunge metro offers.
+                        Sophistication in the heart of an Ecological Paradise, with amenities to enrich your life and a
+                        location to unwind,
+                        life becomes better at Merlin Avana.
+                    </p>
+                    <button class="btn btn-download connect-button" data-bs-toggle="modal"
+                        data-bs-target="#brochureModal">DOWNLOAD
+                        BROCHURE</button>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6 text-center">
+                    <img src="./assests/img/overview.png" class="img-fluid rounded shadow" alt="Project Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 title-heading">Project Details</h2>
+            <hr class="mx-auto mb-5" style="width: 50px; height: 3px; background-color: #16565F; opacity:1;">
+
+            <!-- Tab buttons -->
+            <ul class="nav justify-content-center mb-4" id="projectDetailsTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-success active mx-2" id="spec-tab" data-bs-toggle="tab"
+                        data-bs-target="#spec" type="button" role="tab">
+                        SPECIFICATION
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn btn-outline-success mx-2" id="amenities-tab" data-bs-toggle="tab"
+                        data-bs-target="#amenities" type="button" role="tab">
+                        AMENITIES
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab content -->
+            <div class="tab-content">
+
+                <!-- SPECIFICATION -->
+                <div class="tab-pane fade show active" id="spec" role="tabpanel">
+                    <div class="row justify-content-center gy-4">
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Bedroom.png" alt="Bedroom" width="60">
+                            <p class="mt-2">Bedroom</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Living Room.png" alt="Living Room" width="60">
+                            <p class="mt-2">Living Room</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Toilet.png" alt="Toilet" width="60">
+                            <p class="mt-2">Toilet</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Kitchen.png" alt="Kitchen" width="60">
+                            <p class="mt-2">Kitchen</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Common Area.png" alt="Common Area" width="60">
+                            <p class="mt-2">Common Area</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AMENITIES -->
+                <div class="tab-pane fade" id="amenities" role="tabpanel">
+                    <div class="row justify-content-center gy-4">
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Swimming Pool.png" alt="Pool" width="60">
+                            <p class="mt-2">Swimming Pool</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Gym.png" alt="Gym" width="60">
+                            <p class="mt-2">Gym</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Garden.png" alt="Garden" width="60">
+                            <p class="mt-2">Garden</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Clubhouse.png" alt="Clubhouse" width="60">
+                            <p class="mt-2">Clubhouse</p>
+                        </div>
+                        <div class="col-6 col-md-2">
+                            <img src="./assests/icon/Playground.png" alt="Playground" width="60">
+                            <p class="mt-2">Playground</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- know more section -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <!-- Centered Image -->
+            <img src="./assests/img/Project Details.png" alt="Project Preview" class="img-fluid mx-auto d-block"
+                style="width:90%; max-width:1000px;">
+
+            <!-- Buttons -->
+            <div class="mt-4 d-flex justify-content-center gap-3">
+                <button class="btn btn-primary btn-lg open-modal connect-button" data-action="know_more"
+                    data-bs-toggle="modal" data-bs-target="#brochureModal">
+                    Know More
+                </button>
+                <button class="btn btn-outline-primary btn-lg open-modal connect-button" data-action="virtual_tour"
+                    data-bs-toggle="modal" data-bs-target="#brochureModal">
+                    Virtual Tour
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--  Embrace First Class Lifestyle-->
+    <section class="project-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Left Side -->
+                <div class="col-md-6">
+                    <h2 class="title-heading">Embrace First Class Lifestyle</h2>
+                    <hr class="Left" style="width: 20px; height: 3px; background-color:#16565F; opacity:1;">
+                    <p class="text-muted mb-4">
+                        Merlin Avana offers the ultimate luxury lifestyle. With its opulent amenities,
+                        spacious residences, and swank resort feeler this address is the pinnacle of chic living.
+                    </p>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-building fs-2 text-info me-3"></i>
+                        <div>
+                            <h5 class="mb-0 fw-bold title-heading">2 BHK</h5>
+                            <small class="text-dark">68 Lacs Onwards</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-building-check fs-2 text-info me-3"></i>
+                        <div>
+                            <h5 class="mb-0 fw-bold title-heading">3 BHK</h5>
+                            <small class="text-dark">1.13 Crore Onwards</small>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="bi bi-buildings fs-2 text-info me-3"></i>
+                        <div>
+                            <h5 class="mb-0 fw-bold title-heading">4 BHK</h5>
+                            <small class="text-dark">1.60 Crore Onwards</small>
+                        </div>
+                    </div>
+
+                    <!-- <button class="btn btn-success fw-semibold px-4 mt-3" onclick="enquireNow()">ENQUIRE NOW</button> -->
+                    <button class="btn btn-primary btn-lg connect-button" data-bs-toggle="modal"
+                        data-bs-target="#brochureModal" data-action="download_brochure">
+                        ENQUIRE NOW
+                    </button>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-md-6 text-center mt-4 mt-md-0">
+                    <img src="./assests/img/lifestlye.png" alt="Project Image" class="img-fluid  shadow">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--  Plans-->
+    <section class="plans-section py-5" style="background: url('./assests/img/hero.jpg') center/cover no-repeat, rgba(255,255,255,0.85); 
+           background-blend-mode: overlay;">
+        <div class="container text-center">
+
+            <!-- Heading -->
+            <h3 class=" title-heading">Plans</h3>
+            <hr class="mx-auto mb-5" style="width: 50px; height: 3px; background-color: #16565F; opacity:1;">
+
+            <!-- Cards -->
+            <div class="row justify-content-center">
+                <!-- Master Plan -->
+                <div class="col-md-5 mb-4">
+                    <div class="card shadow-lg border-0 rounded-4 h-100">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-center">Master Plan</h5>
+                            <hr class="mx-auto mb-5"
+                                style="width: 50px; height: 3px; background-color: #16565F; opacity:1;">
+                            <img src="./assests/img/master.jpg" class="card-img-top" alt="Master Plan">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floor Plan -->
+                <div class="col-md-5 mb-4">
+                    <div class="card shadow-lg border-0 rounded-4 h-100">
+                        <div class="card-body">
+                            <h5 class="fw-bold text-center">Floor Plan</h5>
+                            <hr class="mx-auto mb-5"
+                                style="width: 50px; height: 3px; background-color: #16565F; opacity:1;">
+                            <img src="./assests/img/floor.png" class="card-img-top" alt="Floor Plan">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Button -->
+            <button class="btn btn-primary btn-lg connect-button" data-bs-toggle="modal" data-bs-target="#brochureModal"
+                data-action="download_brochure">
+                Download Plans
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- gallery -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4 title-heading">Gallery</h2>
+            <hr class="mx-auto mb-5" style="width: 50px; height: 3px; background-color:#16565F; opacity:1;">
+
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="galleryTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active mx-2" id="images-tab" data-bs-toggle="tab" data-bs-target="#images"
+                        type="button" role="tab">
+                        Images
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link mx-2" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos"
+                        type="button" role="tab">
+                        Videos
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+                <!-- Images Tab -->
+                <div class="tab-pane fade show active" id="images" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="./assests/img/under construction/1.png" class="img-fluid rounded shadow-sm"
+                                alt="Gallery Image 1">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="./assests/img/under construction/2.png" class="img-fluid rounded shadow-sm"
+                                alt="Gallery Image 2">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="./assests/img/under construction/3.png" class="img-fluid rounded shadow-sm"
+                                alt="Gallery Image 3">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3">
+                            <img src="./assests/img/under construction/4.png" class="img-fluid rounded shadow-sm"
+                                alt="Gallery Image 4">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Videos Tab -->
+                <div class="tab-pane fade" id="videos" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID1" title="Video 1"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID2" title="Video 2"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- download brochure -->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <button class="btn btn-primary btn-lg connect-button" data-bs-toggle="modal" data-bs-target="#brochureModal"
+                data-action="download_brochure">
+                Download Brochure
+            </button>
+        </div>
+    </section>
+    <!-- video -->
+    <section class="video-section">
+        <div class="container-fluid p-0">
+            <video class="w-100" autoplay muted loop playsinline>
+                <source src="./assests/videos/video_preview_h264.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="py-5 text-center bg-light">
+        <div class="container">
+            <button class="btn btn-primary btn-lg connect-button" data-bs-toggle="modal" data-bs-target="#brochureModal"
+                data-action="download_brochure">
+                Contact Us
+            </button>
+        </div>
+    </section>
+    <!-- Construction Updates -->
+    <section class="py-5" style="background-color: rgb(250, 238, 215);">
+        <div class="container text-center">
+            <h2 class="mb-4" style="color: purple;">Construction Updates</h2>
+            <hr class="mx-auto mb-5" style="width: 50px; height: 3px; background-color: purple; opacity:1;">
+
+            <!-- Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-4" id="constructionTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active mx-2" id="june-tab" data-bs-toggle="tab" data-bs-target="#june"
+                        type="button" role="tab">
+                        June 2025
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link mx-2" id="july-tab" data-bs-toggle="tab" data-bs-target="#july"
+                        type="button" role="tab">
+                        July 2025
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link mx-2" id="aug-tab" data-bs-toggle="tab" data-bs-target="#aug" type="button"
+                        role="tab">
+                        August 2025
+                    </button>
+                </li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+
+                <!-- June -->
+                <div class="tab-pane fade show active" id="june" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/1.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/2.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/3.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/4.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/5.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/6.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- July -->
+                <div class="tab-pane fade" id="july" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/7.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/8.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/9.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/10.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/11.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/12.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                    </div>
+                </div>
+
+                <!-- August -->
+                <div class="tab-pane fade" id="aug" role="tabpanel">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/13.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/14.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/15.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/16.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/17.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                        <div class="col-6 col-md-4"><img src="./assests/img/under construction/18.png"
+                                class="img-fluid rounded shadow-sm" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- map-->
+    <!-- Map Section -->
+    <section class="container-fluid p-0">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.955224084434!2d77.20667431501052!3d28.61393948240266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03e1e7f2b1b3%3A0x9e8053a0f7b1f7!2sNew%20Delhi%2C%20India!5e0!3m2!1sen!2sus!4v1694261447261!5m2!1sen!2sus"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map">
+            </iframe>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="text-white py-3 position-relative" style="background-color: #e4ffff;">
+        <div class="container d-flex justify-content-center align-items-center position-relative">
+
+            <!-- Left: Follow Us -->
+            <div class="d-flex align-items-center text-nowrap" style="margin-left: calc(18% - 10px);">
+                <span class="me-2" style="color: #16565F; font-weight: bold; ">Follow Us</span>
+                <div class="d-flex">
+                    <a href="#" class="me-2 social instagram" aria-label="Instagram">
+                        <!-- Instagram (gradient) -->
+                        <svg viewBox="0 0 24 24" width="30" height="30" role="img" aria-hidden="false"
+                            focusable="false">
+                            <title>Instagram</title>
+                            <defs>
+                                <linearGradient id="igGrad" x1="0" x2="1" y1="0" y2="1">
+                                    <stop offset="0%" stop-color="#f58529" />
+                                    <stop offset="30%" stop-color="#dd2a7b" />
+                                    <stop offset="60%" stop-color="#8134af" />
+                                    <stop offset="100%" stop-color="#515bd4" />
+                                </linearGradient>
+                            </defs>
+                            <!-- outer rounded square -->
+                            <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#igGrad)" />
+                            <!-- camera circle -->
+                            <circle cx="12" cy="11.5" r="3.6" fill="#fff" />
+                            <!-- inner pupil -->
+                            <circle cx="12" cy="11.5" r="1.6" fill="#3b3b3b" />
+                            <!-- small top-right dot -->
+                            <circle cx="17.2" cy="7.8" r="0.9" fill="#fff" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="me-2 social facebook" aria-label="Facebook">
+                        <!-- Facebook (blue) -->
+                        <svg viewBox="0 0 24 24" width="30" height="30" role="img" aria-hidden="false"
+                            focusable="false">
+                            <title>Facebook</title>
+                            <path fill="#1877F2"
+                                d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.14 8.44 9.93v-7.03H8.24v-2.9h2.2V9.41c0-2.18 1.3-3.39 3.27-3.39.95 0 1.95.17 1.95.17v2.14h-1.09c-1.08 0-1.42.67-1.42 1.36v1.64h2.42l-.39 2.9h-2.03V22c4.78-.79 8.44-4.94 8.44-9.93z" />
+                        </svg>
+                    </a>
+
+                    <a href="#" class="social youtube" aria-label="YouTube">
+                        <!-- YouTube (red) -->
+                        <svg viewBox="0 0 24 24" width="30" height="30" role="img" aria-hidden="false"
+                            focusable="false">
+                            <title>YouTube</title>
+                            <!-- rounded rectangle -->
+                            <path fill="#FF0000"
+                                d="M23.5 7.2a3 3 0 0 0-2.1-2.12C19.5 4.6 12 4.6 12 4.6s-7.5 0-9.4.48A3 3 0 0 0 .5 7.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.12C4.5 19.4 12 19.4 12 19.4s7.5 0 9.4-.48a3 3 0 0 0 2.1-2.12A31 31 0 0 0 24 12a31 31 0 0 0-.5-4.8z" />
+                            <!-- play triangle -->
+                            <path fill="#fff" d="M10 15.5V8.5l6 3.5-6 3.5z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: Related Links -->
+            <div class="d-flex align-items-center text-nowrap" style="margin-left: calc(7% - 10px);">
+                <span class="me-2" style="color: #16565F; font-weight: bold; ">Related Links</span>
+                <span class="mx-2" style="color: #16565F;">></span>
+                <a href="#" class="text-decoration-none" style="color: #16565F;  ">Privacy Policy</a>
+                <span class="mx-2" style="color: #16565F;">></span>
+                <a href="#" class="text-decoration-none" style="color: #16565F;">Important Notes</a>
+            </div>
+
+            <!-- Divider Line centered -->
+            <div class="position-absolute top-50 start-50 translate-middle-y vr"
+                style="height:40px; background-color: #16565F;"></div>
+
+        </div>
+    </section>
+    <!-- Copyright Section -->
+    <section class="text-white py-3" style="background-color: #c7eff5; color: #16565F;  ">
+        <div class="container">
+            <div class="row text-center text-md-start align-items-center" style="color: #16565F; ">
+                <!-- Column 1 -->
+                <div class="col-12 col-md-3 mb-2 mb-md-0">
+                    &copy; 2025 Your Company Name
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-12 col-md-3 mb-2 mb-md-0">
+                    GST No: 1234567890
+                </div>
+
+                <!-- Vertical Divider -->
+                <div class="d-none d-md-block col-md-1">
+                    <div class="vr h-100 mx-auto"></div>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-12 col-md-2 mb-2 mb-md-0">
+                    Financed by Anand
+                </div>
+
+                <!-- Column 4 -->
+                <div class="col-12 col-md-3">
+                    Designed by Anand
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- popup form -->
+    <div class="modal fade" id="brochureModal" tabindex="-1" aria-labelledby="brochureModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <form action="https://api.web3forms.com/submit" method="POST" id="brochureForm" class="modal-content">
+                <!-- <form action="https://api.web3forms.com/submit" method="POST" id="form" class="modal-content"> -->
+                <input type="hidden" name="access_key" value="640bb50d-922d-41d4-a293-2d2757e7e21f" />
+                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                <input type="checkbox" name="botcheck" style="display:none;" />
+                <div class="modal-header">
+                    <h5 class="modal-title" id="brochureModalLabel">Download Brochure</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email ID</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mobile" class="form-label">Mobile</label>
+                        <div class="input-group">
+                            <span class="input-group-text">+91</span>
+                            <input type="tel" name="phone" id="mobile" class="form-control"
+                                placeholder="Enter your number" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="flat" class="form-label">Flat Type</label>
+                        <select name="flat" id="flat" class="form-select" required>
+                            <option value="">Select Flat Type</option>
+                            <option>2 BHK</option>
+                            <option>3 BHK</option>
+                            <option>4 BHK</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" name="consent" id="consent" class="form-check-input" required>
+                        <label class="form-check-label" for="consent">
+                            By submitting this form, you consent to receive calls, messages, and communications.
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </div>
+
+                    <!-- <p class="text-center text-gray-500" id="result"></p> -->
+                    <p class="text-center text-gray-500" id="brochureResult"></p>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js">    </script>
+    <script>
+
+    </script>
+</body>
+
+</html>

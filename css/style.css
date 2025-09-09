@@ -1,0 +1,227 @@
+ /* Transparent navbar */
+.navbar {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar.bg-transparent {
+  background-color: transparent !important;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar.scrolled .nav-link,
+.navbar.scrolled .navbar-brand {
+  color: black !important;
+}
+
+.navbar.scrolled .nav-link:hover,
+.navbar.scrolled .navbar-brand:hover {
+  color: #333 !important; /* darker*/
+}
+/* headings  */
+.title-heading{
+  color: #16565F;
+  font-weight: bold;
+}
+.overview{
+ color: #16565F;
+ font-weight: bolder;
+}
+/* buttons */
+.connect-button {
+    background-color: #16565F; /* force override Bootstrap color */
+    border-color: #16565F; /* optional: match border */
+    color: #fff; /* make text readable */
+     font-weight: 600;
+}
+
+.connect-button:hover {
+    background-color: #13474B; /* slightly darker on hover */
+    border-color: #13474B;
+}
+
+.hero {
+   min-height: 100vh;
+   background: url('../assests/img/hero2.png') center/cover no-repeat;
+   display: flex;
+   align-items: center;
+   position: relative;
+   color: #fff;
+   padding-top: 50px;
+ }
+
+ /* dark overlay */
+ .hero::after {
+   content: "";
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.3);
+   z-index: 0;
+   /* keep behind content */
+ }
+
+ /* bring text + form above overlay */
+ .hero-content {
+   position: relative;
+   z-index: 1;
+ }
+
+ .enquiry-form {
+   background: linear-gradient(to bottom,
+       rgba(40, 83, 88, 0.6),
+       /* top color */
+       rgba(0, 23, 26, 0.8)
+       /* bottom color  */
+     );
+   padding: 2rem;
+   font-size: small;
+   border-radius: 0px;
+   color: #fff;
+   border-top: 5px solid rgb(22, 86, 95);
+   /* top border */
+ }
+
+
+ .enquiry-form .form-control,
+ .enquiry-form .form-select {
+   background: rgba(255, 255, 255, 0.0);
+   /* border: 0px;   */
+   font-size: x-small;
+   border-width: 0px 0px 1px 0px;
+   border-style: solid;
+   border-color: #ced4da;
+   border-radius: 0rem;
+ }
+ .form-control:focus {
+  border-color:rgba(255, 255, 255, 0.0);             /* highlight border */
+   border-width: 0px 0px 1px 0px;
+  box-shadow: 0 0 8px rgba(22, 86, 95, 0.0); /* glowing effect */
+  background-color: rgba(255, 255, 255, 0.0);;         /* subtle background change */
+}
+
+ .input-group-text {
+   background: rgba(255, 255, 255, 0.0);
+   border: 0px;
+   font-size: x-small;
+   border-width: 0px 0px 1px 0px;
+   border-style: solid;
+   border-color: #ced4da;
+   border-radius: 0rem;
+ }
+
+ .btn-enquire {
+   background-color: #00b4d8;
+   color: #fff;
+   font-weight: 600;
+   width: 100%;
+ }
+
+ .btn-enquire:hover {
+   background-color: #0096c7;
+ }
+/* icon section */
+.heighlight-icon
+{
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+.icon-text{
+  font-weight:bold; 
+  font-size: small;
+}
+ /* overview section */
+ .overview-section {
+   padding: 60px 0;
+   background-color: #f8fdfc;
+   /* light bg similar to screenshot */
+ }
+
+ .overview-section h2 {
+   font-weight: 700;
+   margin-bottom: 20px;
+ }
+
+ .overview-section p {
+   color: #444;
+ }
+
+/*  details*/
+/* Active tab */
+#projectDetailsTabs .btn.active {
+    background-color: #16565F !important; /* active background */
+    color: #fff !important; /* text color */
+    border-color: #16565F !important; /* active border color */
+}
+
+/* Non-active tabs */
+#projectDetailsTabs .btn {
+    border-color: #16565F !important; /* border for non-active tabs */
+    color: #16565F !important; /* text color for non-active */
+}
+
+/* Optional: hover effect for non-active tabs */
+#projectDetailsTabs .btn:not(.active):hover {
+    background-color: #16565F10; /* subtle background on hover */
+}
+
+ /* map */
+ .map-container {
+   width: 100%;
+   height: 500px;
+   /* Adjust height as needed */
+ }
+/* gallery */
+/* Active tab */
+#galleryTabs .nav-link.active {
+    background-color: #16565F !important; /* active background */
+    color: #fff !important;               /* active text color */
+    border-color: #16565F !important;    /* active border */
+}
+
+/* Inactive tabs */
+#galleryTabs .nav-link {
+    border-color: #16565F !important;     /* border for inactive tabs */
+    color: #16565F !important;            /* text color for inactive tabs */
+}
+
+/* Optional: hover effect for inactive tabs */
+#galleryTabs .nav-link:not(.active):hover {
+    background-color: #16565F10;          /* subtle transparent background on hover */
+}
+/* Construction Updates */
+
+/* Active tab */
+#constructionTabs .nav-link.active {
+    background-color: rgb(76, 76, 252) !important; /* active background */
+    color: #fff !important;               /* active text color */
+    border-color: #6c11ff !important;     /* active border */
+    border-radius: 20px;
+}
+
+/* Inactive tabs */
+#constructionTabs .nav-link {
+    border: 1px solid #6c11ff !important; /* border for inactive */
+    color: #6c11ff !important;            /* text color for inactive */
+    background-color: transparent !important;
+        border-radius: 20px;
+}
+
+/* Hover effect for inactive */
+#constructionTabs .nav-link:not(.active):hover {
+    background-color: #16565F10;          /* subtle transparent background */
+}
+
+ #map {
+   width: 100%;
+   height: 100%;
+   border: 0;
+ }
+
+
+ /* popup form */
+ .modal-content {
+   border-radius: 8px;
+ }
